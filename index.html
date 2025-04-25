@@ -9,7 +9,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Noto Sans KR', sans-serif;
-        background-color: #f5f5f5;
+        background-color: #f8f8fa;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -17,10 +17,10 @@
       }
 
       .profile-card {
-        background: white;
+        background: rgb(255, 255, 255);
         border-radius: 20px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        padding: 2rem;
+        box-shadow: 0 10px 20px rgba(49, 65, 156, 0.1);
+        padding: 3rem;
         width: 300px;
         text-align: center;
       }
@@ -31,20 +31,18 @@
         border-radius: 50%;
         margin-bottom: 1.5rem;
         object-fit: cover;
-        border: 5px solid #f0f0f0;
+        border: 5px solid #e3e3ee;
       }
 
       .name {
         font-size: 1.5rem;
         font-weight: bold;
         color: #333;
-        margin-bottom: 0.5rem;
       }
 
       .bio {
         color: #666;
         line-height: 1.6;
-        margin-bottom: 1.5rem;
       }
 
       .homework-links {
@@ -65,11 +63,12 @@
         text-align: center;
         color: #555;
         text-decoration: none;
-        transition: color 0.3s ease;
+        transition: all 0.3s ease;
       }
 
       .homework-links a:hover {
-        color: #007bff;
+        color: #3800b9;
+        font-weight: 600;
       }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
@@ -82,11 +81,11 @@
       <!-- 이유 1 : 저장소의 이름을 homework에서 다른 이름으로 변경할 경우 모든 절대 경로를 수정해야 합니다. -->
       <!-- Github 배포를 위해 절대 경로를 사용할 경우 로컬에서 확인이 불가합니다. (https://localhost:8090으로 접속했을 때 homework을 찾지 못함) -->
       <!-- 이러한 이유로 과제를 작성할 경우 반드시 경로는 상대 경로를 사용해 주세요 -->
-      <img src="/homework/src/assets/ssam.jpg" alt="슬비쌤 프로필" class="profile-image" />
+      <!-- <img src="/homework/src/assets/ssam.jpg" alt="슬비쌤 프로필" class="profile-image" /> -->
       <!-- 상대 경로로 이미지 삽입하기 -->
-      <img src="./src/assets/ssam.jpg" alt="슬비쌤 프로필" class="profile-image" />
-      <h1 class="name">슬비쌤</h1>
-      <p class="bio">멋쟁이 사자처럼 프론트엔드 부트캠프 14기 슬비쌤 입니다.</p>
+      <img src="./src/assets/profilepic.jpg" alt="문서영 프로필" class="profile-image" />
+      <h1 class="name">문서영</h1>
+      <p class="bio">멋쟁이 사자처럼 프론트엔드<br />부트캠프 14기 문서영 입니다!</p>
       <p>과제 결과는 링크를 선택해주세요.</p>
       <ul class="homework-links">
         <li><a href="./src/md/markdown.md">마크다운 문법</a></li>
