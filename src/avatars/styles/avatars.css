@@ -1,1 +1,62 @@
-/* 여기에 스타일을 구현해 주세요 */
+body,
+ul,
+li,
+img,
+div,
+main {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(246, 247, 248, 1));
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 396px;
+}
+
+.avatar-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  .avatar-list__item {
+    width: 64px;
+    height: 64px;
+    position: relative;
+
+    .avatar-list__image {
+      object-fit: contain;
+      border-radius: 50%;
+      width: 100%;
+    }
+
+    .avatar-list__status {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 1);
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    .avatar-list__status--online {
+      background-color: rgba(3, 204, 92, 1);
+    }
+
+    .avatar-list__status--offline {
+      background-color: rgba(188, 195, 199, 1);
+    }
+  }
+}
