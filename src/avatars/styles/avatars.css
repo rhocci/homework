@@ -3,7 +3,8 @@ ul,
 li,
 img,
 div,
-main {
+main,
+a {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -11,17 +12,19 @@ main {
 }
 
 body {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(246, 247, 248, 1));
+  background-color: #fff;
 }
 
 .wrapper {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container {
   width: 396px;
+  padding: 20px;
 }
 
 .avatar-list {
@@ -35,8 +38,11 @@ body {
     height: 64px;
     position: relative;
 
+    a {
+      font-size: 0;
+    }
+
     .avatar-list__image {
-      object-fit: contain;
       border-radius: 50%;
       width: 100%;
     }
@@ -45,18 +51,18 @@ body {
       width: 18px;
       height: 18px;
       border-radius: 50%;
-      border: 1px solid rgba(255, 255, 255, 1);
+      border: 1px solid #fff;
       position: absolute;
       right: 0;
       bottom: 0;
     }
 
     .avatar-list__status--online {
-      background-color: rgba(3, 204, 92, 1);
+      background-color: #4cfe88;
     }
 
     .avatar-list__status--offline {
-      background-color: rgba(188, 195, 199, 1);
+      background-color: #dbdbdb;
     }
   }
 }
