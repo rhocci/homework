@@ -8,6 +8,7 @@
   --focus-bg: #e9f0fd;
   --focus-border: #24388d;
 
+  --text-12: 0.75rem;
   --text-14: 0.875rem;
   --text-16: 1rem;
 
@@ -117,10 +118,16 @@ body {
       border: 1px solid var(--border-color);
     }
 
-    label {
+    .error-message {
+      display: none;
       margin-left: 0.0625rem;
       color: var(--warning-color);
+      font-size: var(--text-12);
       pointer-events: none;
+
+      strong {
+        font-size: inherit;
+      }
     }
   }
 
@@ -129,7 +136,8 @@ body {
     outline: 1px solid var(--main-color);
   }
 
-  input:invalid + .error-message {
+  input:invalid:focus + .error-message,
+  input:invalid.user-input + .error-message {
     display: inline;
   }
 }
