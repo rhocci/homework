@@ -1,0 +1,224 @@
+:root {
+  --main-color: #03cf5d;
+  --text-color: #121212;
+  --status-color: #999;
+  --warning-color: #ff1414;
+  --bg-color: #fff;
+  --border-color: #dadada;
+  --focus-bg: #e9f0fd;
+  --focus-border: #24388d;
+
+  --text-14: 0.875rem;
+  --text-16: 1rem;
+
+  --line-height-150: 1.5;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+body,
+div,
+h1,
+form,
+input,
+label,
+strong,
+a,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-weight: normal;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+
+* {
+  font:
+    normal var(--text-16) / var(--line-height-150) 'Spoqa Han Sans Neo',
+    'sans-serif';
+}
+
+label {
+  pointer-events: none;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.8125rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.25rem;
+}
+
+.header {
+  a {
+    font-size: 0;
+  }
+
+  .logo {
+    width: 230px;
+  }
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  & > * {
+    width: 100%;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.625rem;
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4375rem;
+
+    input {
+      padding: 0.875rem;
+      color: var(--text-color);
+      font-size: var(--text-14);
+      height: 45px;
+      border: 1px solid var(--border-color);
+    }
+
+    label {
+      margin-left: 0.0625rem;
+      color: var(--warning-color);
+      pointer-events: none;
+    }
+  }
+
+  input:focus {
+    background: var(--focus-bg);
+    outline: 1px solid var(--main-color);
+  }
+
+  input:invalid + .error-message {
+    display: inline;
+  }
+}
+
+.form-button {
+  margin-top: 1.25rem;
+  color: var(--bg-color);
+  background-color: var(--main-color);
+  height: 45px;
+  font-size: var(--text-16);
+  font-weight: 700;
+  text-align: center;
+}
+
+.options {
+  margin-top: 0.625rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  .keep-login {
+    display: flex;
+    column-gap: 0.3125rem;
+    cursor: pointer;
+
+    .icon {
+      display: inline-block;
+      width: 24px;
+      aspect-ratio: 1/1;
+      background-image: url(../icons/unchecked.svg);
+    }
+
+    .icon:focus {
+      outline: 2px solid var(--focus-border);
+    }
+  }
+
+  .keep-login-checkbox:checked ~ .icon {
+    background-image: url(../icons/checked.svg);
+  }
+
+  .ip-secure {
+    display: none;
+
+    a {
+      color: var(--text-color);
+    }
+
+    span {
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .status-off {
+      color: var(--status-color);
+    }
+  }
+
+  .status-on {
+    color: var(--main-color);
+    display: none;
+  }
+
+  .ip-secure-checkbox:checked ~ .status-on {
+    display: inline;
+  }
+
+  .ip-secure-checkbox:checked ~ .status-off {
+    display: none;
+  }
+}
+
+.keep-login-checkbox:focus-visible + .icon {
+  outline: 2px solid var(--focus-border);
+  border-radius: 2px;
+}
+
+.ip-secure-checkbox:focus-visible ~ span {
+  outline: 2px solid var(--focus-border);
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 769px) {
+  .login-wrapper {
+    width: 500px;
+  }
+
+  .options .ip-secure {
+    display: inline-block;
+    order: -1;
+  }
+}

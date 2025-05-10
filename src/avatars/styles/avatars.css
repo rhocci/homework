@@ -3,12 +3,21 @@ ul,
 li,
 img,
 div,
-main,
-a {
+main {
   margin: 0;
   padding: 0;
   list-style: none;
   box-sizing: border-box;
+}
+
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
 }
 
 body {
@@ -32,37 +41,31 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+}
 
-  .avatar-list__item {
-    width: 64px;
-    height: 64px;
-    position: relative;
+.avatar-button {
+  width: 64px;
+  height: 64px;
+  position: relative;
 
-    a {
-      font-size: 0;
-    }
+  .avatar__image {
+    border-radius: 50%;
+    width: 100%;
+  }
 
-    .avatar-list__image {
-      border-radius: 50%;
-      width: 100%;
-    }
+  &::after {
+    content: '';
+    width: 25%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #dbdbdb;
+  }
 
-    .avatar-list__status {
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      border: 1px solid #fff;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-    }
-
-    .avatar-list__status--online {
-      background-color: #4cfe88;
-    }
-
-    .avatar-list__status--offline {
-      background-color: #dbdbdb;
-    }
+  &.avatar--online::after {
+    background-color: #4cfe88;
   }
 }
