@@ -12,8 +12,8 @@
     <div class="container">
       <header class="header">
         <h1 id="naverLogin" class="sr-only">네이버 로그인</h1>
-        <!-- Naver Logo -->
         <a href="/" aria-labelledby="naverLogin">
+          <!-- Naver Logo -->
           <svg class="logo" width="230" height="44" viewBox="0 0 230 44" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M30.0764 23.5394L13.6301 0H0V43.9824H14.279V20.443L30.7252 43.9824H44.3554V0H30.0764V23.5394Z" fill="#03CF5D" />
             <path d="M66.2086 0L48.8973 43.9824H63.6132L65.701 38.1767H82.2929L84.3851 44H99.0967L81.7853 0.0175967L66.2086 0ZM69.0644 27.5946L73.9992 13.8545L78.9295 27.5946H69.0644Z" fill="#03CF5D" />
@@ -29,12 +29,14 @@
       <form class="login-wrapper" action="#" method="post">
         <div class="input-group">
           <div class="form-input">
-            <input type="email" id="inputId" required placeholder="아이디(이메일)" />
-            <label for="inputId" class="error-message" hidden>아이디는 <strong>이메일</strong> 형식으로 입력해 주세요.</label>
+            <input type="email" id="inputId" required placeholder="아이디(이메일)" aria-describedby="idError" />
+            <label for="inputId" class="error-message sr-only">아이디</label>
+            <p id="idError" class="error-message" aria-live="polite" hidden>아이디는 <em>이메일</em> 형식으로 입력해 주세요.</p>
           </div>
           <div class="form-input">
-            <input type="password" id="inputPassword" minlength="10" required placeholder="비밀번호" />
-            <label for="inputPassword" class="error-message" hidden>비밀번호는 <strong>10자리 이상</strong> 입력해 주세요.</label>
+            <input type="password" id="inputPassword" minlength="10" required placeholder="비밀번호" aria-describedby="pwError" />
+            <label for="inputPassword" class="error-message sr-only">비밀번호</label>
+            <p id="pwError" class="error-message">비밀번호는 <em>10자리 이상</em> 입력해 주세요.</p>
           </div>
         </div>
         <button class="form-button" type="submit">로그인</button>
