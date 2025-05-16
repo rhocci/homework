@@ -1,3 +1,77 @@
-@import "./reset.css";
-@import "./theme.css";
-@import "./base.css";
+@import './reset.css';
+@import './theme.css';
+@import './base.css';
+@import './font.css';
+
+body {
+  background: var(--white);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  padding-block-start: var(--large-spacing);
+  height: var(--size);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--small-spacing);
+  text-align: center;
+
+  .card__title {
+    color: var(--black-200);
+    font-size: var(--large-text);
+    font-weight: 700;
+  }
+
+  .card__subtitle {
+    color: var(--black-200);
+    font-size: var(--base-text);
+    font-weight: 500;
+    line-height: var(--line-normal);
+  }
+
+  .card__notice {
+    color: var(--gray);
+    font-size: var(--small-text);
+  }
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: var(--base-spacing);
+
+  .button {
+    min-width: 28px;
+    font-size: var(--xx-small-text);
+    font-weight: 500;
+    padding: var(--x-small-spacing) var(--small-spacing);
+    border: 1px solid var(--black-200);
+    border-radius: 50px;
+  }
+
+  .button--primary {
+    color: var(--white);
+    background-color: var(--black-200);
+  }
+
+  .button--primary:hover {
+    background-color: var(--black-100);
+  }
+
+  .button--secondary {
+    color: var(--black-200);
+    background: none;
+  }
+
+  .button--secondary:hover {
+    color: var(--white);
+    background-color: var(--black-200);
+  }
+}
