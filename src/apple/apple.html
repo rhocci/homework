@@ -10,139 +10,143 @@
     <link rel="stylesheet" href="./styles/apple.css" />
   </head>
   <body>
-    <h1 lang="en" class="sr-only">Apple</h1>
-    <nav class="nav">
-      <div class="nav__bar">
-        <a class="logo icon" href="/" aria-label="애플 홈페이지로">
-          <img src="./icons/apple-icon.svg" alt="" />
-        </a>
-        <ul class="nav__menus">
-          <li><a href="#">스토어</a></li>
-          <li><a href="#">Mac</a></li>
-          <li><a href="#">iPad</a></li>
-          <li><a href="#">iPhone</a></li>
-          <li><a href="#">Watch</a></li>
-          <li><a href="#">Vision</a></li>
-          <li><a href="#">AirPods</a></li>
-          <li><a href="#">TV 및 홈</a></li>
-          <li><a href="#">엔터테인먼트</a></li>
-          <li><a href="#">액세서리</a></li>
-          <li><a href="#">고객지원</a></li>
-        </ul>
-        <div class="nav__icons">
-          <button class="icon" aria-label="검색">
-            <img src="./icons/search-icon.svg" alt="" />
-          </button>
-          <button class="icon" aria-label="장바구니">
-            <img src="./icons/cart-icon.svg" alt="" />
-          </button>
-          <button class="icon mobile-icon" aria-label="메뉴 열기">
-            <img src="./icons/menu-icon.svg" alt="" />
-          </button>
+    <div class="wrapper">
+      <h1 lang="en" class="sr-only">Apple</h1>
+      <nav class="nav">
+        <div class="nav__bar">
+          <a class="logo icon" href="/" aria-label="애플 홈페이지로">
+            <img src="./icons/apple-icon.svg" alt="" />
+          </a>
+          <ul class="nav__menus">
+            <li><a href="#">스토어</a></li>
+            <li><a href="#">Mac</a></li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">AirPods</a></li>
+            <li><a href="#">TV 및 홈</a></li>
+            <li><a href="#">엔터테인먼트</a></li>
+            <li><a href="#">액세서리</a></li>
+            <li><a href="#">고객지원</a></li>
+          </ul>
+          <div class="nav__icons">
+            <button class="icon" aria-label="검색">
+              <img src="./icons/search-icon.svg" alt="" />
+            </button>
+            <button class="icon" aria-label="장바구니">
+              <img src="./icons/cart-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="nav__menutrigger">
+            <button class="icon nav__toggle" aria-label="메뉴 열기">
+              <img src="./icons/menu-icon.svg" alt="" />
+            </button>
+          </div>
         </div>
-      </div>
-    </nav>
-    <main class="container">
-      <article class="card card--dark card--ipad-pro">
-        <div class="card__info">
-          <h2 class="card__title" lang="en">iPad Pro</h2>
-          <p class="card__subtitle">
-            놀라우리만치 얇다.<br />
-            엄청나게 강력하다.
+      </nav>
+      <main class="container">
+        <article class="card card--dark card--ipad-pro">
+          <div class="card__info">
+            <h2 class="card__title" lang="en">iPad Pro</h2>
+            <p class="card__subtitle">
+              놀라우리만치 얇다.<br />
+              엄청나게 강력하다.
+            </p>
+            <p class="card__notice">출시일 추후 공개</p>
+            <div class="card__buttons">
+              <a href="#" class="button button--primary">더 알아보기</a>
+              <a href="#" class="button button--secondary">가격 보기</a>
+            </div>
+          </div>
+        </article>
+        <article class="card card--ipad-air">
+          <div class="card__info">
+            <h2 class="card__title" lang="en">iPad Air</h2>
+            <p class="card__subtitle">
+              두 가지 사이즈. 더 빠른 칩.<br />
+              무엇이든 거뜬하게.
+            </p>
+            <p class="card__notice">출시일 추후 공개</p>
+            <div class="card__buttons">
+              <a href="#" class="button button--primary">더 알아보기</a>
+              <a href="#" class="button button--secondary">가격 보기</a>
+            </div>
+          </div>
+        </article>
+        <article class="card card--dark card--iphone-pro">
+          <div class="card__info">
+            <h2 class="card__title" lang="en">iPhone 15 Pro</h2>
+            <p class="card__subtitle">티타늄. 초강력. 초경량. 초프로.</p>
+            <div class="card__buttons">
+              <a href="#" class="button button--primary">더 알아보기</a>
+              <a href="#" class="button button--secondary">가격 보기</a>
+            </div>
+          </div>
+        </article>
+        <article class="card card--iphone">
+          <div class="card__info">
+            <h2 class="card__title" lang="en">iPhone 15</h2>
+            <p class="card__subtitle">
+              새로운 카메라.<br />
+              새로운 디자인.<br />
+              새로움이 물씬.<br />
+            </p>
+            <div class="card__buttons">
+              <a href="#" class="button button--primary">더 알아보기</a>
+              <a href="#" class="button button--secondary">가격 보기</a>
+            </div>
+          </div>
+        </article>
+        <article class="card card--dark card--watch">
+          <div class="card__info">
+            <h2 class="card__title" lang="en">WATCH</h2>
+            <p class="card__subtitle">보다 똑똑. 보다 또렷. 보다 강력.</p>
+            <div class="card__buttons">
+              <a href="#" class="button button--primary">더 알아보기</a>
+              <a href="#" class="button button--secondary">가격 보기</a>
+            </div>
+          </div>
+        </article>
+        <article class="card card--macbook">
+          <div class="card__info">
+            <h2 class="card__title" lang="en">MacBook Air</h2>
+            <p class="card__subtitle">날렵하게. 강력하게. <span>M3</span>답게.</p>
+            <div class="card__buttons">
+              <a href="#" class="button button--primary">더 알아보기</a>
+              <a href="#" class="button button--secondary">가격 보기</a>
+            </div>
+          </div>
+        </article>
+        <article class="card card--dark card--airpods">
+          <div class="card__info">
+            <h2 class="card__title" lang="en">AirPods Pro</h2>
+            <p class="card__subtitle">
+              전에 없던 청취 경험.<br />
+              적응형 오디오.
+            </p>
+            <div class="card__buttons">
+              <a href="#" class="button button--primary">더 알아보기</a>
+              <a href="#" class="button button--secondary">가격 보기</a>
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer class="footer">
+        <div class="footer__info">
+          <p>
+            1. Apple Intelligence는 Siri 및 기기 언어를 한국어, 중국어(간체), 영어(오스트레일리아, 캐나다, 인도, 아일랜드, 뉴질랜드, 싱가포르, 남아프리카 공화국, 영국, 미국), 프랑스어, 독일어, 이탈리아어, 일본어, 포르투갈어(브라질), 스페인어로 설정한 iPhone 16 전체 모델, iPhone 15 Pro, iPhone 15 Pro
+            Max, iPad mini(A17 Pro 모델) 그리고 M1 이후 iPad 및 Mac 모델에서 베타로 사용할 수 있으며, iOS 18, iPadOS 18, macOS Sequoia 소프트웨어 업데이트를 통해 제공됩니다. 올해 안으로 계속해서 베트남어를 비롯한 지원 언어를 추가해 나갈 예정입니다. 일부 기능은 한국어로 제공되지 않습니다.
           </p>
-          <p class="card__notice">출시일 추후 공개</p>
-          <div class="card__buttons">
-            <a href="#" class="button button--primary">더 알아보기</a>
-            <a href="#" class="button button--secondary">가격 보기</a>
-          </div>
-        </div>
-      </article>
-      <article class="card card--ipad-air">
-        <div class="card__info">
-          <h2 class="card__title" lang="en">iPad Air</h2>
-          <p class="card__subtitle">
-            두 가지 사이즈. 더 빠른 칩.<br />
-            무엇이든 거뜬하게.
+          <p>2. 두 가지 모델로 제공: AirPods 4 및 AirPods 4 액티브 노이즈 캔슬링 모델.</p>
+          <p>
+            3. ₩1,030,000은 iPhone 15 Pro Max 1TB 모델의 보상 판매 금액으로, 보상 판매 서비스는 Apple의 보상 판매 파트너사를 통해 제공됩니다. Apple 및 Apple의 계열사는 고객과 파트너 간 계약의 당사자가 아닙니다. 보상 판매 견적액은 예상 금액일 뿐이며, 실제 보상 판매 금액이 예상 금액보다 낮을 수도
+            있습니다. 보상 판매 금액은 보상 판매 대상이 되는 제품의 상태, 연도, 모델, 그리고 보상 판매 대상이 되는 제품이 최초 판매된 국가/지역에 따라 달라집니다.
           </p>
-          <p class="card__notice">출시일 추후 공개</p>
-          <div class="card__buttons">
-            <a href="#" class="button button--primary">더 알아보기</a>
-            <a href="#" class="button button--secondary">가격 보기</a>
-          </div>
+          <p>Apple TV+ 이용을 위해서는 구독이 필요합니다.</p>
+          <p>기능은 변경될 수 있습니다. 일부 기능, 애플리케이션 및 서비스를 이용할 수 없는 국가나 언어도 있습니다.</p>
         </div>
-      </article>
-      <article class="card card--dark card--iphone-pro">
-        <div class="card__info">
-          <h2 class="card__title" lang="en">iPhone 15 Pro</h2>
-          <p class="card__subtitle">티타늄. 초강력. 초경량. 초프로.</p>
-          <div class="card__buttons">
-            <a href="#" class="button button--primary">더 알아보기</a>
-            <a href="#" class="button button--secondary">가격 보기</a>
-          </div>
-        </div>
-      </article>
-      <article class="card card--iphone">
-        <div class="card__info">
-          <h2 class="card__title" lang="en">iPhone 15</h2>
-          <p class="card__subtitle">
-            새로운 카메라.<br />
-            새로운 디자인.<br />
-            새로움이 물씬.<br />
-          </p>
-          <div class="card__buttons">
-            <a href="#" class="button button--primary">더 알아보기</a>
-            <a href="#" class="button button--secondary">가격 보기</a>
-          </div>
-        </div>
-      </article>
-      <article class="card card--dark card--watch">
-        <div class="card__info">
-          <h2 class="card__title" lang="en">WATCH</h2>
-          <p class="card__subtitle">보다 똑똑. 보다 또렷. 보다 강력.</p>
-          <div class="card__buttons">
-            <a href="#" class="button button--primary">더 알아보기</a>
-            <a href="#" class="button button--secondary">가격 보기</a>
-          </div>
-        </div>
-      </article>
-      <article class="card card--macbook">
-        <div class="card__info">
-          <h2 class="card__title" lang="en">MacBook Air</h2>
-          <p class="card__subtitle">날렵하게. 강력하게. <span>M3</span>답게.</p>
-          <div class="card__buttons">
-            <a href="#" class="button button--primary">더 알아보기</a>
-            <a href="#" class="button button--secondary">가격 보기</a>
-          </div>
-        </div>
-      </article>
-      <article class="card card--dark card--airpods">
-        <div class="card__info">
-          <h2 class="card__title" lang="en">AirPods Pro</h2>
-          <p class="card__subtitle">
-            전에 없던 청취 경험.<br />
-            적응형 오디오.
-          </p>
-          <div class="card__buttons">
-            <a href="#" class="button button--primary">더 알아보기</a>
-            <a href="#" class="button button--secondary">가격 보기</a>
-          </div>
-        </div>
-      </article>
-    </main>
-    <footer class="footer">
-      <div class="footer__info">
-        <p>
-          1. Apple Intelligence는 Siri 및 기기 언어를 한국어, 중국어(간체), 영어(오스트레일리아, 캐나다, 인도, 아일랜드, 뉴질랜드, 싱가포르, 남아프리카 공화국, 영국, 미국), 프랑스어, 독일어, 이탈리아어, 일본어, 포르투갈어(브라질), 스페인어로 설정한 iPhone 16 전체 모델, iPhone 15 Pro, iPhone 15 Pro
-          Max, iPad mini(A17 Pro 모델) 그리고 M1 이후 iPad 및 Mac 모델에서 베타로 사용할 수 있으며, iOS 18, iPadOS 18, macOS Sequoia 소프트웨어 업데이트를 통해 제공됩니다. 올해 안으로 계속해서 베트남어를 비롯한 지원 언어를 추가해 나갈 예정입니다. 일부 기능은 한국어로 제공되지 않습니다.
-        </p>
-        <p>2. 두 가지 모델로 제공: AirPods 4 및 AirPods 4 액티브 노이즈 캔슬링 모델.</p>
-        <p>
-          3. ₩1,030,000은 iPhone 15 Pro Max 1TB 모델의 보상 판매 금액으로, 보상 판매 서비스는 Apple의 보상 판매 파트너사를 통해 제공됩니다. Apple 및 Apple의 계열사는 고객과 파트너 간 계약의 당사자가 아닙니다. 보상 판매 견적액은 예상 금액일 뿐이며, 실제 보상 판매 금액이 예상 금액보다 낮을 수도
-          있습니다. 보상 판매 금액은 보상 판매 대상이 되는 제품의 상태, 연도, 모델, 그리고 보상 판매 대상이 되는 제품이 최초 판매된 국가/지역에 따라 달라집니다.
-        </p>
-        <p>Apple TV+ 이용을 위해서는 구독이 필요합니다.</p>
-        <p>기능은 변경될 수 있습니다. 일부 기능, 애플리케이션 및 서비스를 이용할 수 없는 국가나 언어도 있습니다.</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

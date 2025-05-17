@@ -11,11 +11,11 @@
   --blue-400: #006edb;
 
   /* Box Size */
-  --size: 33.75rem; /* 540px - 카드 높이 고정 값 */
+  --size: 37.5rem; /* 600px - 카드 높이 고정 값 */
 
   /* Text Size */
-  --xx-small-text: 0.875rem; /* 14px - Small Screen 버튼(링크) 글자 크기 */
-  --x-small-text: 1rem; /* 16px - Large Screen 버튼(링크) 글자 크기 */
+  --xx-small-text: .75rem; /* 12px - Small Screen 버튼(링크) 글자 크기 */
+  --x-small-text: .875rem; /* 14px - Large Screen 버튼(링크) 글자 크기 */
   --small-text: 1.0625rem; /* 17px - 출시일 추후 공개 글자 크기 (공통) */
   --base-text: 1.1875rem; /* 19px - Small Screen 부제목 글자 크기 */
   --medium-text: 1.3125rem; /* 21px - Large Screen 부제목 글자 크기 */
