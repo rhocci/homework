@@ -75,3 +75,9 @@ body {
     background-color: var(--black-200);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .card__subtitle br {
+    display: none;
+  }
+}
