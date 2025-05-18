@@ -23,20 +23,20 @@ body {
   row-gap: var(--small-spacing);
   text-align: center;
 
-  .card__title {
+  & .card__title {
     color: var(--black-200);
     font-size: var(--large-text);
     font-weight: 700;
   }
 
-  .card__subtitle {
+  & .card__subtitle {
     color: var(--black-200);
     font-size: var(--base-text);
     font-weight: 500;
     line-height: var(--line-normal);
   }
 
-  .card__notice {
+  & .card__notice {
     color: var(--gray);
     font-size: var(--small-text);
   }
@@ -47,7 +47,7 @@ body {
   justify-content: center;
   column-gap: var(--base-spacing);
 
-  .button {
+  & .button {
     min-width: 28px;
     font-size: var(--xx-small-text);
     font-weight: 500;
@@ -56,21 +56,21 @@ body {
     border-radius: 50px;
   }
 
-  .button--primary {
+  & .button--primary {
     color: var(--white);
     background-color: var(--black-200);
   }
 
-  .button--primary:hover {
+  & .button--primary:hover {
     background-color: var(--black-100);
   }
 
-  .button--secondary {
+  & .button--secondary {
     color: var(--black-200);
     background: none;
   }
 
-  .button--secondary:hover {
+  & .button--secondary:hover {
     color: var(--white);
     background-color: var(--black-200);
   }
